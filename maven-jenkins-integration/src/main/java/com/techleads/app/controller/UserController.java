@@ -9,5 +9,11 @@ public class UserController {
 	public String homePage() {
 		return "Welcome to User portal";
 	}
+	
+	@GetMapping(value = {"/admin"})
+	public String admin() {
+		return "Welcome to Admin portal";
+	}
+
 
 }
